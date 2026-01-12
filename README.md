@@ -34,14 +34,13 @@ När data kommer utifrån (som från ett formulär eller JSON) landar det ofta s
 ## Steg 4: Slutuppgift – "Kvitto-maskinen"
 Här knyter vi ihop allt i ett scenario. Välj ett tema (t.ex. Webshop, Restaurang eller Streaming-tjänst).
 
-1. Skriv kommentaren: `// Steg 5: Slutuppgift`.
+1. Skriv kommentaren: `// Steg 4: Slutuppgift`.
 2. **Mottagen Data:** Skapa ett objekt som heter inputData eller annat (valfritt). 
 Det här objektet simulerar information vi fått från ett formulär t.ex. Objektet ska innehålla minst 3 egenskaper:
    * Namn på en produkt eller tjänst.
    * Ett pris (skrivet som en sträng, t.ex. `"1499"`).
    * En skatt eller rabatt (t.ex. `"25%"`).
 3. **Logiken:**
-   * Parsa JSON-strängen till ett objekt.
    * Konvertera priset till ett `number`.
    * Använd `parseInt()` för att få ut siffran från skatten/rabatten.
 4. **Beräkningen:** Räkna ut det slutgiltiga priset (Pris * (1 + skatt/100)).
