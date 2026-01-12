@@ -33,5 +33,14 @@ const randNum: number = Math.floor(Math.random() * 100) + 1; // generera ett vä
 const nu: Date = new Date();
 console.log(`slump tal: ${randNum}, nuvarande år: ${nu.getFullYear()}`);
 
-// Steg 3: Typkonvertering
+// Steg 3: Typkonvertering & Assertion
+const parsedNum: number = parseInt("10rem");
+const convertedNum: number = Number("1337");
+const asserted: any = "Elite";
+const assertedLen: number = (asserted as string).length;
+
+console.log(
+  `parsedInt(): ${parsedNum}, Number(): ${convertedNum}, "as string" length: ${assertedLen}`,
+);
+
 // Steg 4: Slutuppgift
