@@ -23,17 +23,7 @@ Nu använder vi webbläsarens inbyggda superkrafter för slump och tid.
 3. **Date:** Skapa en instans av dagens datum med `new Date()`.
 4. **Logga:** Skriv ut ett meddelande i konsolen som innehåller både ditt slumpade tal och vilket år det är just nu (använd `.getFullYear()`).
 
-## Steg 3: JSON – "Frys ner" din data
-Här simulerar vi hur vi paketerar data för att spara den eller skicka den över nätet.
-
-1. Skriv kommentaren: `// Steg 3: JSON`.
-2. **Stringify:** Gör om ditt objekt från Steg 1 till en textsträng med `JSON.stringify()` och spara i en ny `const`.
-3. **Spara & Hämta:** * Spara strängen i webbläsarens minne: `localStorage.setItem("myData", dinSträng);`.
-   * *Tips: Gå till fliken "Application" -> "Local Storage" i webbläsaren för att se din sparade data!*
-4. **Parse:** Hämta tillbaka strängen med `getItem` och omvandla den till ett objekt igen med `JSON.parse()`.
-5. **Reflektera:** Hovra över ditt nya objekt i koden. Varför säger TypeScript att typen är `any` nu?
-
-## Steg 4: Typkonvertering & Assertion
+## Steg 3: Typkonvertering & Assertion
 När data kommer utifrån (som från ett formulär eller JSON) landar det ofta som text.
 
 1. Skriv kommentaren: `// Steg 4: Typkonvertering`.
@@ -41,11 +31,12 @@ När data kommer utifrån (som från ett formulär eller JSON) landar det ofta s
 3. **Number:** Konvertera en ren siffersträng (t.ex. `"500"`) till ett nummer med `Number()`.
 4. **Assertion:** Skapa en `any`-variabel som innehåller en text. Använd `as string` för att tala om för TypeScript att det är en sträng så att du kan använda `.length`.
 
-## Steg 5: Slutuppgift – "Kvitto-maskinen"
+## Steg 4: Slutuppgift – "Kvitto-maskinen"
 Här knyter vi ihop allt i ett scenario. Välj ett tema (t.ex. Webshop, Restaurang eller Streaming-tjänst).
 
 1. Skriv kommentaren: `// Steg 5: Slutuppgift`.
-2. **Mottagen Data:** Skapa en `const apiResponse` med en JSON-sträng som innehåller:
+2. **Mottagen Data:** Skapa ett objekt som heter inputData eller annat (valfritt). 
+Det här objektet simulerar information vi fått från ett formulär t.ex. Objektet ska innehålla minst 3 egenskaper:
    * Namn på en produkt eller tjänst.
    * Ett pris (skrivet som en sträng, t.ex. `"1499"`).
    * En skatt eller rabatt (t.ex. `"25%"`).
@@ -59,7 +50,7 @@ Här knyter vi ihop allt i ett scenario. Välj ett tema (t.ex. Webshop, Restaura
 
 ---
 
-### Inspiration till Steg 5 (om du har idétorka):
+### Inspiration till Steg 4 (om du har idétorka):
 * **E-handel:** `'{"item": "Sneakers", "price": "1200", "discount": "20%"}'`
 * **Restaurang:** `'{"item": "Margherita", "price": "145", "tip": "10%"}'`
 * **Streaming:** `'{"item": "Månadsabonnemang", "price": "149", "vat": "6%"}'`
