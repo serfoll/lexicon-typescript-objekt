@@ -44,3 +44,17 @@ console.log(
 );
 
 // Steg 4: Slutuppgift
+const inputData = {
+  item: "Concert ticket",
+  price: "350",
+  vat: "25%",
+};
+
+const item: string = inputData.item;
+const price: number = Number(inputData.price);
+const vat: number = parseInt(inputData.vat);
+const cost: number = price * (1 + vat / 100);
+console.log(inputData.price + 100); // + blir omvandlare och slår ihop  värden till ett tal, vill man beräkna omvandla o beräkna samtidigt kan man sätta ett + förre strägene
+console.log(+inputData.price + 100);
+const cart: string = `Produkt: ${item} \nPris: ${price} \nMOMS:  ${vat}% \n___________________________ \nAtt betala: ${cost}kr`;
+console.log(cart);
