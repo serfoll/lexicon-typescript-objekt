@@ -1,0 +1,23 @@
+{
+  "name": "lexicon-typescript-objekt",
+  "version": "1.0.0",
+  "description": "Här ska vi öva på att strukturera data i objekt, använda inbyggda verktyg i webbläsaren och lära oss hur vi konverterar data mellan text och kod.",
+  "main": "index.js",
+  "scripts": {
+    "ts": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serfoll/lexicon-typescript-objekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serfoll/lexicon-typescript-objekt/issues"
+  },
+  "homepage": "https://github.com/serfoll/lexicon-typescript-objekt#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
